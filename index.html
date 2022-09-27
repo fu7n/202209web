@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="/static/skin/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/skin/js/jquery.marquee.js"></script>
+  <script type="text/javascript" src="/static/skin/js/jquery.superslide.2.1.1.js"></script>
+  <!-- <script src="https://www.cmd5.com/md5.js" type="text/javascript"></script> -->
+  <script src="/static/skin/js/lsx.js"></script>
+  <title>202209web</title>
+  <style>
+    @import '/static/skin/css/bootstrap.min.css';
+    @import '/static/skin/css/swiper.min.css';
+    @import '/static/skin/css/animate.min.css';
+    @import '/static/skin/css/baguettebox.min.css';
+    @import '/static/skin/css/gallery-clean.css';
+    @import '/static/skin/css/master.css';
+  </style>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <script src="/static/skin/js/bootstrap.min.js"></script>
+  <script src="/static/skin/js/swiper.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var swiper = new Swiper('.banner .swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    })
+
+  </script>
+  <script type="text/javascript" src="/static/skin/js/baguettebox.min.js"></script>
+  <script type="text/javascript">
+    baguetteBox.run('.tz-gallery');
+  </script>
+</body>
+
+</html>
